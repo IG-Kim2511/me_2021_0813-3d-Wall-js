@@ -1,0 +1,81 @@
+
+  
+  /* 🍀 start coding
+  - Navbar */
+  #navbar {
+    color: var(--color-black);
+  }
+
+  .mememe{
+      background-color: var(--color-kakao);
+  }
+  
+  /* 🍀 keyframs */
+  
+  
+  /* T: keyframes */
+  
+  .logo h1 span:nth-child(1) {
+    animation: drop-letters 30s 1s infinite;
+  }
+  .logo h1 span:nth-child(2) {
+    animation: drop-letters 30s 2s infinite;
+  }
+
+  
+  @keyframes drop-letters {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* 🍀 [responsive] for below 768px screen width */
+  
+  /*🚀 breakpoint
+  1200px : pc⚡
+  992px : Tablet  ⚡⚡⚡기준
+  (768px : Tablet or phone)
+  576px : phone⚡
+  */
+  
+  /* me : 
+  992px : Tablet 기준으로 작업하고, 
+  576px: phone - responsive 추가
+  1200px : pc- responsive 추가
+  
+  (1200px : pc  
+  @media (min-width: 1200px) {  
+    max-width: 1200px
+    margin: auto;
+  */
+  
+  /* @ 768px */
+  @media (max-width: 768px) {
+    :root {
+    }
+  
+    html {
+      font-size: 70%;
+    }
+  }
+  
+  /* @ 576px */
+  @media (max-width: 576px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  /* @ 1200px */
+  @media (min-width: 1200px) {
+    #skills,
+    #language {
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+  

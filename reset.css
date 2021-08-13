@@ -1,0 +1,168 @@
+/* 🍀ready- Global */
+
+/*🍀
+ width: calc(1*2*100%);
+ */
+
+ :root {
+  /* color */
+
+  --color-naver: #0eae44;
+  --color-facebook: #3b5998;
+  --color-netflix: #d61319;
+  --color-kakao: #fee101;
+
+  --color-red: #e01541;
+  --color-blue: #446df6;
+  --color-green: #33ca7f;
+
+  --color-white: #ffffff;
+  --color-light-white: #f3f3f3;
+  --color-light2-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+
+  --color-black: #000000;
+  --color-grey: #616161;
+  --color-dark-grey: #4d4d4d;
+  --color-light-grey: #7c7979;
+
+  --shadow: rgba(8, 47, 102, 0.12);
+
+  /* size */
+  --base: 1rem;
+  --sm: calc(var(--base) * 1.5);
+  --med: calc(var(--base) * 3);
+  --large: calc(var(--base) * 5);
+
+  /* border-radius :basic 4px=0.5rem  */
+  --border-radius: 0.5rem;
+
+  /* Animation :basic 300ms=0.3s  */
+  --animation_basic-duration: 0.3s;
+
+  /* letterspacing : basic 0.1rem */
+  --letterspacing-basic: 0.1rem;
+}
+
+/* 🍀ready- Universal tags */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* 🍀ready- css trick */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.transforming {
+  transition: transform 0.5s;
+}
+
+/* 🍀myButton  */
+.myButton {
+  box-shadow: inset 0px 39px 0px -24px var(--color-naver);
+  background-color: var(--color-naver);
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+.myButton:hover {
+  /* background-color: var(--color-naver); */
+  opacity: 0.6;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton2 {
+  box-shadow: inset 0px 39px 0px -24px var(--color-light2-white);
+  background-color: var(--color-light2-white);
+  border-radius: 4px;
+  border: 2px solid var(--color-naver);
+  display: inline-block;
+  cursor: pointer;
+
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+.myButton2:hover {
+  /* background-color: var(--color-naver); */
+  opacity: 0.8;
+}
+.myButton2:active {
+  position: relative;
+  top: 1px;
+}
+
+/* 🍀 table : 🚀 table 가운데 정렬하기 */
+table {
+  width: 100%;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+}
