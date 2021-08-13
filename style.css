@@ -1,11 +1,65 @@
 
   
-  /* 🍀 start coding
-  - Navbar */
-  #navbar {
-    color: var(--color-black);
+  /* 🍀 start coding */
+
+  body{
+   background-color:var(--color-kakao)
   }
 
+  .world{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective:1000px;/* css 10 */
+  }
+
+  .stage  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;/* css 10  */
+  }
+
+  .house{
+    width: 100vw;
+    height: 100vh;
+    transform: translateZ(-490vw);/*css 10   */
+    transform-style: preserve-3d;/* css 10  */
+  }
+
+  .wall{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  /*  */
+
+  .wall-left{
+
+  width: 1000vw;
+  background: var(--color-light2-white);
+  transform: rotateY(90deg) translateZ(-500vw);/* css 10  */
+  }
+  .wall-right{
+
+  width: 1000vw;
+  background: var(--color-light2-white);
+  transform: rotateY(90deg) translateZ(-400vw);/* css 10  */
+  }
+
+
+
+
+
+  
 
   /* 🍀 keyframs */
   
