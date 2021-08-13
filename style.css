@@ -37,10 +37,10 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255,255,255,0.8);
+    background-color: var(--color-light2-white);
   }
 
-  /*  */
+  /* wall left, right */
 
   .wall-left{
 
@@ -55,11 +55,51 @@
   transform: rotateY(90deg) translateZ(-400vw);/* css 10  */
   }
 
+  /* wall front */
+
+  .wall-front-a{
+    transform: translateZ(300vw);
+  }
+  .wall-front-b{
+    transform: translateZ(50vw);    
+  }
+  .wall-front-c{
+    transform: translateZ(-200vw);
+  }
+  .wall-front-d{
+    transform: translateZ(-500vw);
+  }
+
+  /* */
+  .wall-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .wall-title{
+    font-size: 5rem;
+  }
+
+  /* progress-bar */
+  .progress-bar-con{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 5px;
+    background: var(--color-grey);
+  }
+  .progress-bar{
+    width: 0;/* js */
+    height:100%;
+    background: var(--color-facebook);
+  }
 
 
 
 
-  
 
   /* 🍀 keyframs */
   
