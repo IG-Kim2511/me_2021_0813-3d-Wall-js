@@ -7,11 +7,13 @@
     const barElem = document.querySelector('.progress-bar');
     const selectCharacterElem = document.querySelector('.select-character');
 
-    let mousePos={x:0,y:0};   // 🍀 js 40
-
     /* js 10 */
-    let maxScrollValue = document.body.offsetHeight - window.innerHeight;
-    console.log(maxScrollValue);
+    let maxScrollValue;
+    
+    //🍀 resize, whenever we change the browser size
+    window.addEventListener('resize',()=>{
+        maxScrollValue = document.body.offsetHeight - window.innerHeight;
+    });
 
 
     //🍀 scroll, z-moving
@@ -31,9 +33,9 @@
     // 🍀 js 40 mousemove, and wall rotate    
     window.addEventListener('mousemove',(e)=>{
         // console.log(e.clientX)
-        // console.log(e.clientY)
+        // console.log(e.clientY)       
    
-        stageElem.style.transform = `rotateX(${e.clientY/ window.innerWidth *5 }deg) rotateY(${e.clientX /  window.innerWidth *5 }deg)`;
+        stageElem.style.transform = `rotateX(${(e.clientY/ window.innerWidth *5)+1 }deg) rotateY(${(e.clientX /  window.innerWidth *5)+1 }deg)`;
     });
 
 
