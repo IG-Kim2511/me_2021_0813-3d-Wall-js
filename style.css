@@ -95,31 +95,6 @@ body {
   background: var(--color-netflix);
 }
 
-
-.character{
-
-  position: absolute;
-  left: 12%;
-  bottom: 5%;
-
-  width: 1rem;
-  font-size:0.1rem;
-
-
-  /* width: 0.1rem; */
-
-  /* z-index: 100; */
-}
-
-
-.parts{
-  width: 1rem;
-  font-size:1rem;
-  background-image:url("./img/ghost.png");
-  z-index: 100; 
-
-}
-
 /* 🍀 keyframs */
 
 /* T: keyframes */
