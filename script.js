@@ -20,11 +20,15 @@
     const zMove = scrollPer * 980 -490;
  
     houseElem.style.transform = `translateZ(${zMove}vw)`; /* js 20 */
-    });
+
 
     // 🍀 js 30 progress bar
 
     barElem.style.width =`${scrollPer*100}%`;
+    
+    });
+
+
 
 })();
 

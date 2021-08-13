@@ -89,9 +89,9 @@ body {
   background: var(--color-grey);
 }
 .progress-bar {
-  width: 0; /* js */
+  width: 0; /* js 30*/
   height: 100%;
-  background: var(--color-facebook);
+  background: var(--color-netflix);
 }
 
 /* 🍀 keyframs */
