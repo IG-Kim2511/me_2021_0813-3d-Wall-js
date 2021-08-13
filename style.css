@@ -1,139 +1,130 @@
+/* 🍀 start coding */
 
-  
-  /* 🍀 start coding */
+body {
+  background-color: var(--color-kakao);
+  height: 500vw; /* js 10 */
+}
 
-  body{
-   background-color:var(--color-kakao)
-  }
+.world {
+  position: fixed; /* js 10 */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px; /* css 10 */
+}
 
-  .world{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    perspective:1000px;/* css 10 */
-  }
+.stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d; /* css 10  */
+}
 
-  .stage  {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    transform-style: preserve-3d;/* css 10  */
-  }
+.house {
+  width: 100vw;
+  height: 100vh;
+  transform: translateZ(-490vw); /*css 10   */ /* js 20 */
+  transform-style: preserve-3d; /* css 10  */
+}
 
-  .house{
-    width: 100vw;
-    height: 100vh;
-    transform: translateZ(-490vw);/*css 10   */
-    transform-style: preserve-3d;/* css 10  */
-  }
+.wall {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-light2-white);
+}
 
-  .wall{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-light2-white);
-  }
+/* wall left, right */
 
-  /* wall left, right */
-
-  .wall-left{
-
+.wall-left {
   width: 1000vw;
   background: var(--color-light2-white);
-  transform: rotateY(90deg) translateZ(-500vw);/* css 10  */
-  }
-  .wall-right{
-
+  transform: rotateY(90deg) translateZ(-500vw); /* css 10  */
+}
+.wall-right {
   width: 1000vw;
   background: var(--color-light2-white);
-  transform: rotateY(90deg) translateZ(-400vw);/* css 10  */
+  transform: rotateY(90deg) translateZ(-400vw); /* css 10  */
+}
+
+/* wall front */
+
+.wall-front-a {
+  transform: translateZ(300vw);
+}
+.wall-front-b {
+  transform: translateZ(50vw);
+}
+.wall-front-c {
+  transform: translateZ(-200vw);
+}
+.wall-front-d {
+  transform: translateZ(-500vw);
+}
+
+/* */
+.wall-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wall-title {
+  font-size: 5rem;
+}
+
+/* progress-bar */
+.progress-bar-con {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 5px;
+  background: var(--color-grey);
+}
+.progress-bar {
+  width: 0; /* js */
+  height: 100%;
+  background: var(--color-facebook);
+}
+
+/* 🍀 keyframs */
+
+/* T: keyframes */
+
+.logo h1 span:nth-child(1) {
+  animation: drop-letters 30s 1s infinite;
+}
+.logo h1 span:nth-child(2) {
+  animation: drop-letters 30s 2s infinite;
+}
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
   }
 
-  /* wall front */
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  .wall-front-a{
-    transform: translateZ(300vw);
-  }
-  .wall-front-b{
-    transform: translateZ(50vw);    
-  }
-  .wall-front-c{
-    transform: translateZ(-200vw);
-  }
-  .wall-front-d{
-    transform: translateZ(-500vw);
-  }
+/* 🍀 [responsive] for below 768px screen width */
 
-  /* */
-  .wall-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .wall-title{
-    font-size: 5rem;
-  }
-
-  /* progress-bar */
-  .progress-bar-con{
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 5px;
-    background: var(--color-grey);
-  }
-  .progress-bar{
-    width: 0;/* js */
-    height:100%;
-    background: var(--color-facebook);
-  }
-
-
-
-
-
-  /* 🍀 keyframs */
-  
-  
-  /* T: keyframes */
-  
-  .logo h1 span:nth-child(1) {
-    animation: drop-letters 30s 1s infinite;
-  }
-  .logo h1 span:nth-child(2) {
-    animation: drop-letters 30s 2s infinite;
-  }
-
-  
-  @keyframes drop-letters {
-    0% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  /* 🍀 [responsive] for below 768px screen width */
-  
-  /*🚀 breakpoint
+/*🚀 breakpoint
   1200px : pc⚡
   992px : Tablet  ⚡⚡⚡기준
   (768px : Tablet or phone)
   576px : phone⚡
   */
-  
-  /* me : 
+
+/* me : 
   992px : Tablet 기준으로 작업하고, 
   576px: phone - responsive 추가
   1200px : pc- responsive 추가
@@ -143,30 +134,29 @@
     max-width: 1200px
     margin: auto;
   */
-  
-  /* @ 768px */
-  @media (max-width: 768px) {
-    :root {
-    }
-  
-    html {
-      font-size: 70%;
-    }
+
+/* @ 768px */
+@media (max-width: 768px) {
+  :root {
   }
-  
-  /* @ 576px */
-  @media (max-width: 576px) {
-    html {
-      font-size: 55%;
-    }
+
+  html {
+    font-size: 70%;
   }
-  
-  /* @ 1200px */
-  @media (min-width: 1200px) {
-    #skills,
-    #language {
-      max-width: 1200px;
-      margin: auto;
-    }
+}
+
+/* @ 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
   }
-  
+}
+
+/* @ 1200px */
+@media (min-width: 1200px) {
+  #skills,
+  #language {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
