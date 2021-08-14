@@ -34,6 +34,8 @@
         // console.log(e.clientY)
    
         stageElem.style.transform = `rotateX(${e.clientY/ window.innerWidth *5 }deg) rotateY(${e.clientX /  window.innerWidth *5 }deg)`;
+
+ 
     });
 
 
