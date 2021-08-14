@@ -21,7 +21,7 @@ body {
   width: 100vw;
   height: 100vh;
   transform-style: preserve-3d; /* css 10  */
-
+  
   transform-origin: center;/* js 40*/
   transform: rotateY(0deg);/* js 40*/
 }
