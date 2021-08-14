@@ -10,8 +10,13 @@
     let mousePos={x:0,y:0};   // 🍀 js 40
 
     /* js 10 */
-    let maxScrollValue = document.body.offsetHeight - window.innerHeight;
+    let maxScrollValue;
     console.log(maxScrollValue);
+
+    // js 10, resize 
+    window.addEventListener('resize', ()=>{
+        maxScrollValue = document.body.offsetHeight - window.innerHeight;
+    });
 
 
     //🍀 scroll, z-moving
