@@ -98,18 +98,23 @@ body {
 }
 
 /* char */
+/* 
 .character-con{
   position: absolute;
-  bottom: 1rem;
-
+  bottom: 0.5rem;
+  
   width: 1rem;
-  /* font-size: 0.1vw; */
+
   z-index: 100;
 }
 
 .character{
   font-size: 0.1vw;
+  width: 1rem;
 }
+ */
+
+ 
 /* 🍀 keyframs */
 
 /* T: keyframes */
