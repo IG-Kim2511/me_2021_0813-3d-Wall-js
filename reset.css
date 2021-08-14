@@ -116,51 +116,8 @@ ol, li {
   transition: transform 0.5s;
 }
 
-/* 🍀myButton  */
-.myButton {
-  box-shadow: inset 0px 39px 0px -24px var(--color-naver);
-  background-color: var(--color-naver);
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
 
-  font-size: 15px;
-  padding: 6px 15px;
-  text-decoration: none;
-}
-.myButton:hover {
-  /* background-color: var(--color-naver); */
-  opacity: 0.6;
-}
-.myButton:active {
-  position: relative;
-  top: 1px;
-}
-
-.myButton2 {
-  box-shadow: inset 0px 39px 0px -24px var(--color-light2-white);
-  background-color: var(--color-light2-white);
-  border-radius: 4px;
-  border: 2px solid var(--color-naver);
-  display: inline-block;
-  cursor: pointer;
-
-  font-size: 15px;
-  padding: 6px 15px;
-  text-decoration: none;
-}
-.myButton2:hover {
-  /* background-color: var(--color-naver); */
-  opacity: 0.8;
-}
-.myButton2:active {
-  position: relative;
-  top: 1px;
-}
-
-/* 🍀 table : 🚀 table 가운데 정렬하기 */
+/* 🍀 table */
 table {
   width: 100%;
 
