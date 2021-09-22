@@ -84,6 +84,20 @@ ol, li {
   list-style: none;
 }
 
+
+/* 🍀 table */
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* 🍀ready- css trick */
 
 .center {
@@ -116,16 +130,3 @@ ol, li {
   transition: transform 0.5s;
 }
 
-
-/* 🍀 table */
-table {
-  width: 100%;
-
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th,
-td {
-  text-align: center;
-  vertical-align: middle;
-}

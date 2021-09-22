@@ -6,20 +6,24 @@ body {
 }
 
 .world {
+  width: 100vw;
+  height: 100vh;
+
   position: fixed; /* js 10 */
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+
   perspective: 1000px; /* css 10 */
 }
 
 .stage {
+  width: 100vw;
+  height: 100vh;
+  
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+
   transform-style: preserve-3d; /* css 10  */
   
   transform-origin: center;/* js 40*/
@@ -29,17 +33,20 @@ body {
 .house {
   width: 100vw;
   height: 100vh;
+
   transform: translateZ(-490vw); /*css 10   */ /* js 20 */
   transform-style: preserve-3d; /* css 10  */
 }
 
 .wall {
+  background-color: var(--color-light2-white);
+  width: 100vw;
+  height: 100vh;
+
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-light2-white);
+ 
 }
 
 /* wall left, right */
@@ -83,13 +90,16 @@ body {
 
 /* progress-bar */
 .progress-bar-con {
+  background: var(--color-grey);
+  width: 100vw;
+  height: 5px;
+
   position: fixed;
   left: 0;
   top: 0;
+
   z-index: 100;
-  width: 100vw;
-  height: 5px;
-  background: var(--color-grey);
+
 }
 .progress-bar {
   width: 0; /* js 30*/
@@ -113,25 +123,4 @@ body {
   width: 1rem;
 }
  */
-
  
-/* 🍀 keyframs */
-
-/* T: keyframes */
-
-.logo h1 span:nth-child(1) {
-  animation: drop-letters 30s 1s infinite;
-}
-.logo h1 span:nth-child(2) {
-  animation: drop-letters 30s 2s infinite;
-}
-
-@keyframes drop-letters {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0);   
-  }
-}
